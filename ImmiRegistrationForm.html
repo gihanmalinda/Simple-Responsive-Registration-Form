@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;900&display=swap');
+
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
+        .logoImage{
+            padding: 60px 0px 60px 0px;
+        }
+        .CenterForm{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .CenterForm img{
+            margin: 10px 0px 10px 0px;
+        }
+
+        .flexContent{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        .leftInput{
+            margin: 0px 20px 0px 0px;
+        }
+
+        .rightInput{
+            margin: 0px 0px 0px 20px;
+        }
+
+        .checkBoxGroup{
+            margin: 0px 0px 0px 0px;
+        }
+
+        .checkBox{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            margin: 0px 0px 15px 0px;
+        }
+
+        .checkBox input{
+            width: 16px;
+            height: 16px;
+        }
+        
+
+        .textField{
+            border: none;
+            border-radius: 14px;
+            box-shadow: 0px 8px 12px -7px black;
+            height: 41px;
+            width: 250px;
+            margin-bottom: 20px;
+        }
+
+        button{
+            margin: 30px 0px 10px 0px;
+            width: 193px;
+            height: 51px;
+            background: #17A94B;
+            border: none;
+            border-radius: 17px;
+            box-shadow: 0px 8px 12px -6px black;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            color: white;
+            cursor:pointer;
+        }
+
+        .CenterForm .leftInput img{
+            width: 250px;
+        }
+
+        .bottomText{
+            margin-top: 60px;
+        }
+
+
+
+
+
+
+
+        /* Mobile view width start at 376px*/
+
+        @media (max-width: 565px) {
+
+            .leftInput{
+                margin: 0px;
+            }
+
+            .rightInput{
+                margin: 0px;
+            }
+
+            .CenterForm .leftInput img{
+            display: none;
+        }
+        }
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="logoImage">
+        <center><img src="indraImmigrationLogo.png" alt="Indra Immigration Logo" width="200px"></center>
+    </div>
+
+    <div class="CenterForm">
+        <form action="">
+            <div class="flexContent">
+                <div class="leftInput">
+                    <div>
+                        <span>Full Name:</span><br>
+                        <input class="textField" type="text" name="FullName" id="">
+                    </div>
+                    <div class="checkBoxGroup">
+                        <div class="checkBox">
+                            <div>
+                                <input type="radio" name="radio" id=""><span> Student Visa</span>
+                            </div>
+                            <div style="padding-right: 7px;">
+                                <input type="radio" name="radio" id=""><span> Visit Visa</span><br>
+                            </div>
+                        </div>
+                        <div class="checkBox">
+                            <div>
+                                <input type="radio" name="radio" id=""><span> Direct PR</span>
+                            </div>
+                            <div>
+                                <input type="radio" name="radio" id=""><span> Work Visa</span>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="students.png" alt="students">
+                </div>
+
+
+                <div class="rightInput">
+                    <div>
+                        <span>Email:</span><br>
+                        <input class="textField" type="email" name="email" id="">
+                    </div>
+                    <div>
+                        <span>Phone No:</span><br>
+                        <input class="textField" type="tel" name="tel" id="">
+                    </div>
+                    <div>
+                        <span>Password:</span><br>
+                        <input class="textField" type="password" name="password" id="">
+                    </div>
+                    <div>
+                        <span>Confirm Password:</span><br>
+                        <input class="textField" type="password" name="password" id="">
+                    </div>
+                </div>
+            </div>
+            <center><button type="submit">Enter</button></center>
+        </form>
+    </div>
+    
+    <div class="bottomText">
+        <center><p>by Digisa</p></center>
+    </div>
+</body>
+</html>
